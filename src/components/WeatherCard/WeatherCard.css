@@ -12,9 +12,12 @@
   display: flex;
   flex-direction: column;
 }
-.weather-temp-c {
+.weather-temp {
   font-weight: 400;
   font-size: 40px;
+}
+.clickable {
+  cursor: pointer;
 }
 .weather-info {
   gap: 15px;

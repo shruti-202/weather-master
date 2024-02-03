@@ -1,6 +1,13 @@
 # WeatherMaster
-WeatherMaster is a single page weather forecast application.
+WeatherMaster is a single page weather forecast application build using Rapid API.
 
+## How to install and run locally ?
+```
+$ git clone https://github.com/shruti-202/weather-master.git
+$ cd weather-master
+$ npm install
+$ npm start
+```
 ## Features:
 1- Current Weather Details
 - City Search: Users can enter a city name to view the current weather details.
@@ -9,6 +16,9 @@ WeatherMaster is a single page weather forecast application.
 
 2- Unit Conversion
 - Temperature Units: Users can toggle between Celsius and Fahrenheit to view weather details in their preferred unit.
+
+3- Handles Error
+- If a user inputs a city name that does not exist, an alert box appears stating that the city is invalid.
 
 ## Tech Stack:
 - HTML5

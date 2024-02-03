@@ -17,16 +17,20 @@
   font-size: 40px;
 }
 .weather-info {
-  display: flex;
-  align-items: center;
   gap: 15px;
   color: var(--off-white);
+  margin-bottom: 15px;
+}
+.weather-info span {
+  margin-right: 10px;
 }
 .weather-place {
   font-size: 16px;
 }
-.weather-avatar {
+.weather-avatar img {
   position: absolute;
-  top: -60px;
-  right: -15px;
+  top: -48px;
+  right: -54px;
+  width: 120px;
+  height: 120px;
 }

@@ -1,8 +1,11 @@
-.App {
-  padding: 10px;
-}
-
 :root {
   --white: #ffffff;
   --off-white: #adb5bd;
+}
+.App {
+  padding: 10px;
+}
+.app-container {
+  max-width: 600px;
+  margin: auto
 }

@@ -1,6 +1,9 @@
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: -50px;
-    text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: -16px;
+  text-align: center;
+}
+footer img {
+  width: 300px;
 }

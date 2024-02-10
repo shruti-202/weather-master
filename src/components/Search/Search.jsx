@@ -12,13 +12,12 @@ const Search = ({ setWeatherDetails }) => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-
       const isValidInput = /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(search.trim());
 
-    if (!isValidInput) {
-      alert("Please enter a valid city name");
-      return;
-    }
+      if (!isValidInput) {
+        alert("Please enter a valid city name");
+        return;
+      }
 
       const options = {
         method: "GET",

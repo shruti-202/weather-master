@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Search.css";
 import axios from "axios";
+import alerts from "../Alerts";
 
 const Search = ({ setWeatherDetails }) => {
   const [search, setSearch] = useState("");
@@ -15,7 +16,7 @@ const Search = ({ setWeatherDetails }) => {
       const isValidInput = /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(search.trim());
 
       if (!isValidInput) {
-        alert("Please enter a valid city name");
+        alerts("Please enter a valid city name","error");
         return;
       }
 
@@ -35,7 +36,7 @@ const Search = ({ setWeatherDetails }) => {
           setWeatherDetails(response.data);
         })
         .catch(function (error) {
-          alert("Please enter a valid city name");
+          alerts("Please enter a valid city name");
         });
     }
   };

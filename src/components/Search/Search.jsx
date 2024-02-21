@@ -15,8 +15,8 @@ const Search = ({ setWeatherDetails }) => {
     if (e.key === "Enter") {
       const isValidInput = /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(search.trim());
 
-      if (!isValidInput) {
-        alerts("Please enter a valid city name","error");
+      if (!isValidInput || search.trim().length < 2) {
+        alerts("Please enter a valid city name", "error");
         return;
       }
 
@@ -36,7 +36,7 @@ const Search = ({ setWeatherDetails }) => {
           setWeatherDetails(response.data);
         })
         .catch(function (error) {
-          alerts("Please enter a valid city name");
+          alerts("Please enter a valid city name", "error");
         });
     }
   };
